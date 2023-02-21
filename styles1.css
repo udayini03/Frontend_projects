@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url(back3.jpg);
+    background-size: 100%;
+    background-position: inherit;
+    background-repeat: no-repeat;
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.menu-bar{
+    text-align:center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;;
+}
+.menu-bar ul li{
+    width: 130px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:rgb(136, 37, 166);
+    font-size: larger;
+}
+.active , .menu-bar ul li:hover{
+    background: rgb(233, 181, 233);
+    border-radius: 5px;
+
+}
+.menu-bar .fa{
+    margin-right: 7px;;
+}
+.side-menu1{
+    display:none;
+}
+.menu-bar ul li:hover .side-menu1{
+    display:block;
+    position: absolute;
+    background: rgb(233, 181, 233);
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.menu-bar ul li:hover .side-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .side-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(39, 3, 46);
+    background: transparent;
+    border-radius: 10px;
+
+}
+.menu-bar ul li:hover .side-menu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .side-menu1 ul li a:hover{
+    color: rgb(39, 3, 46);
+
+}
+
+.fa-angle-right{
+    float: right;
+}
+
+.sub-menu2{
+    display: none;
+}
+.hover-me:hover .sub-menu2{
+    position: absolute;
+    display: block;
+    margin-top: -38px;
+    margin-left: 140px; 
+    background: rgb(240, 178, 240);
+}
+
+h2{
+    color: rgb(136, 37, 166);
+    font-size: 60px;
+    text-align: center;
+    
+}
+
